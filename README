@@ -1,0 +1,20 @@
+This is a collection of scripts to assist system administrators in using the
+Debian Tor and related packages as a base for a Tor chroot. It is hard coded
+and specific to Debian at this time.
+
+Run the following:
+
+ make install
+
+Setup the chroot:
+
+ tor-chroot-update.sh
+
+You must now copy over a torrc that is proper:
+
+ cp /etc/tor/torrc /home/tor-chroot/etc/tor/torrc
+
+Start your chroot'ed Tor:
+
+ /etc/init.d/tor-chroot start
+
