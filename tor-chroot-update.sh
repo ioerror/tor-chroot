@@ -9,7 +9,7 @@ TORCHROOT=/home/tor-chroot
 # Prep the chroot
 mkdir -p $TORCHROOT
 mkdir -p $TORCHROOT/{root,etc/tor/,dev,lib,var/run/tor/,var/lib/tor/,var/log/tor/}/
-chown debian-tor:debian-tor $TORCHROOT{/var/lib/tor,/var/run/tor,/var/log/tor}
+chown debian-tor:debian-tor $TORCHROOT{/root,/var/lib/tor,/var/run/tor,/var/log/tor}
 chmod 750 $TORCHROOT{/var/lib/tor,/var/run/tor,/var/log/tor}
 ls -al $TORCHROOT{/var/lib/tor,/var/run/tor,/var/log/tor}
 
