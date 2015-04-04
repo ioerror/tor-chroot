@@ -22,4 +22,4 @@ if [ -f $DEFAULTSFILE ] ; then
 fi
 
 echo "Trying to chroot into $TORCHROOT..."
-/usr/sbin/chroot $TORCHROOT /usr/sbin/tor $*
+/usr/sbin/chroot --userspec=debian-tor:debian-tor $TORCHROOT /usr/sbin/tor $*
