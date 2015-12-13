@@ -38,13 +38,6 @@ cp /lib/x86_64-linux-gnu/libnss* /lib/x86_64-linux-gnu/libnsl* /lib/x86_64-linux
 mkdir -p $TORCHROOT/usr/sbin
 cp /usr/sbin/tor  $TORCHROOT/usr/sbin/tor
 
-# Copy over geoip
-mkdir -p $TORCHROOT/usr/share/tor/
-cp /usr/share/tor/geoip $TORCHROOT/usr/share/tor/geoip
-
-# copy over the tor-exit-notice.html
-cp /etc/tor/tor-exit-notice.html $TORCHROOT/etc/tor/tor-exit-notice.html
-
 # Copy over the Tor chroot wrapper script
 cat << 'EOF' > $TORCHROOT/usr/sbin/tor-chroot.sh
 #!/bin/bash -x
