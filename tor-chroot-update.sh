@@ -28,6 +28,7 @@ cp /lib/x86_64-linux-gnu/libnsl.so.1 $TORCHROOT/lib/libnsl.so.1
 cp /lib/x86_64-linux-gnu/librt.so.1 $TORCHROOT/lib/librt.so.1
 cp /lib/x86_64-linux-gnu/libresolv.so.2 $TORCHROOT/lib/libresolv.so.2
 cp /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 $TORCHROOT/lib64/ld-linux-x86-64.so.2
+cp /usr/lib/x86_64-linux-gnu/libseccomp.so.2 $TORCHROOT/lib/libseccomp.so.2
 
 # More generic libs
 cp /lib/x86_64-linux-gnu/libnss* /lib/x86_64-linux-gnu/libnsl* /lib/x86_64-linux-gnu/libresolv* \
